@@ -13,5 +13,4 @@ CLI installed several linters (nothing customized yet, all default)
 
 -[X]markuplint
 
-
 made a .gitignore file, added node_modules & *.log
