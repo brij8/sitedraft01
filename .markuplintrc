@@ -31,5 +31,34 @@
     "required-h1": true,
     "use-list": true,
     "wai-aria": true
-  }
+  },
+  "nodeRules": [
+    {
+      "selector": "link",
+      "rules": {
+        "character-reference": false
+      }
+    },
+    {
+      "selector": "img",
+      "rules": {
+        "character-reference": false
+      }
+    },
+    {
+      "selector": "a",
+      "rules": {
+        "character-reference": false
+      }
+    }
+  ],
+  "childNodeRules": [
+    {
+      "selector": "html",
+      "inheritance": false,
+      "rules": {
+        "indentation": false
+      }
+    }
+  ]
 }
