@@ -20,3 +20,5 @@ CLI installed several linters (nothing customized yet, all default)
 -[X]lint-staged
 
 made a .gitignore file, added node_modules & *.log
+
+made a .lintstagedrc file bc why not
