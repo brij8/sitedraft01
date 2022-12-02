@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Color Palette Maker</title>
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="grid-proj1.css">
-    <link rel="stylesheet" href="styles-proj1.css">
-
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="grid-proj1.css" />
+    <link rel="stylesheet" href="styles-proj1.css" />
   </head>
 
   <body>
     <div class="container text-align-center">
-
       <!-- header -->
       <header class="row white-text justify-center align-center page-header">
         <h1 class="cur-font">brij8.com</h1>
@@ -25,14 +25,26 @@
       </div>
 
       <!-- about project -->
-      <div id="about" class="row justify-evenly align-center pt-50 pb-50 about-section">
-        <img alt="Color Palette" src="../assets/colpalss200.jpg" class="col-3 about-image">
+      <div
+        id="about"
+        class="row justify-evenly align-center pt-50 pb-50 about-section"
+      >
+        <img
+          alt="Color Palette"
+          src="../assets/colpalss200.jpg"
+          class="col-3 about-image"
+        />
         <div class="col-5 text-align-reset">
-          <p>Color Palette Maker
+          <p>
+            Color Palette Maker
             <a href="" class="about-links nav-item">[GitHub Repo]</a>
           </p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
         </div>
       </div>
 
@@ -50,39 +62,48 @@
       </div>
 
       <!-- what's inside -->
-      <!-- these links will need targets and will eventually open img files or a popup carousel -->
       <div id="projImgs" class="row justify-evenly pb-50 projects-section">
         <h1 class="col-12 notblack-text">What's Inside</h1>
-        <a href="">
-          <img alt="colpalSS1" src="../assets/colpalss200.jpg">
-        </a>
-        <a href="">
-          <img alt="colpalSS2" src="../assets/colpalss200.jpg">
-        </a>
-        <a href="">
-          <img alt="colpalSS3" src="../assets/colpalss200.jpg">
-        </a>
+
+        <button id="imgbtn1" class="modal-btn">
+          <img alt="colpalSS1" src="../assets/colpalss200.jpg" />
+        </button>
+        <button id="imgbtn2" class="modal-btn">
+          <img alt="colpalSS1" src="../assets/colpalss200.jpg" />
+        </button>
+        <button id="imgbtn3" class="modal-btn">
+          <img alt="colpalSS1" src="../assets/colpalss200.jpg" />
+        </button>
       </div>
 
       <!-- see it go -->
-      <!-- these links will need targets and will eventually open img files or a popup carousel -->
       <div id="projGifs" class="row justify-evenly pb-50 projects-section">
         <h1 class="col-12 notblack-text">See It Go</h1>
         <a href="">
-          <img alt="colpalSS1" src="../assets/colpalss200.jpg">
+          <img alt="colpalSS1" src="../assets/colpalss200.jpg" />
         </a>
         <a href="">
-          <img alt="colpalSS2" src="../assets/colpalss200.jpg">
+          <img alt="colpalSS2" src="../assets/colpalss200.jpg" />
         </a>
         <a href="">
-          <img alt="colpalSS3" src="../assets/colpalss200.jpg">
+          <img alt="colpalSS3" src="../assets/colpalss200.jpg" />
         </a>
       </div>
 
       <!-- footer -->
-      <div id="contact" class="row justify-center pb-50 white-text contact-section">
-      </div>
-
+      <div
+        id="contact"
+        class="row justify-center pb-50 white-text contact-section"
+      ></div>
     </div>
+
+    <!-- img carousel modal -->
+    <div id="imgModal" class="img-modal">
+      <div class="modal-content">
+        <span class="modal-x">&times;</span>
+        <p>Some text in the Modal..</p>
+      </div>
+    </div>
+    <script src="main.js"></script>
   </body>
 </html>
